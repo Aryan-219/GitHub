@@ -1,0 +1,126 @@
+ls 
+mkdir project 
+cd project
+git init
+ls 
+ls -a 
+touch names.txt
+git status
+----------
+git add . //this will add all the files in the current directory(all the untracked files) OR use git add names.txt for adding specific files
+(color of untracked files changes from red to green at git status)
+git commit -m "This is my first commit" // -m stands for the message
+-----
+//For writing anything into a file
+mkdir <NAME OF FOLDER> //Creating a folder
+touch <filename with extension> //Creating a file
+vi <filename with extension> // Entering or opening the file
+Perform the entries
+Press esc
+Then type :x or :wq//It will save and exit OR
+Type :w // This will save and not exit
+For renaming type :w [name of the file without extension]
+To exit without saving, type :q!
+For viewing whats in the file type cat <filename with extension>
+---------------------------------
+git status
+git add .
+git status
+git commit -m "names.txt file was modified"
+git log 
+---------------------------------------
+For deleting a file rm -rf names.txt
+---------------------------------------
+git add .
+git commit -m "names.txt file deleted"
+git status
+git log
+--------------------------------------
+For getting or restoring the code at a certain time 
+git reset bfa0cb4540dd4c1cb334e44177fb55216c0bd1f2
+ git log 
+git status
+
+git add .
+git status
+touch surnames.txt
+git add .   
+git status
+
+vi surnames.txt
+Agrawal //this is the change
+touch surnames.txt
+git add .
+git status
+git stash 
+ 
+cat names.txt
+git stash pop
+git add .
+git stash 
+
+For removing all the stashed items
+git stash clear
+================================================
+#Learning Github
+
+For adding /attaching a github repo 
+git remote add origin <link of github repo>
+git remote -v
+git push origin master
+
+touch surnames.txt
+touch hotel.txt
+git add .
+git commit -m "hotel.txt added"
+touch roll no.txt
+git add .
+git commit -m "roll no.txt added" 
+//Performing some random commtis
+
+ls .
+
+// head is just the pointer
+/* below is only for explanation
+git branch feature - this is for creating a new branch
+git checkout feature //this means that head now points to feature branch 
+git checkout main //head now points to main branch
+git merge feature - this will merge the feature branch with main branch
+*/
+git log
+git remote -v // CTRL+clickonlink to open on github
+git push origin master //For pushing the code to master branch
+================================================================
+Working with projects
+A project which is in someone else's account, we can't make changes directly to it.
+For doing so we first have to fork it. doing so will create a copy of that project to our github account now for working on the project we clone it to our system by using 
+git clone <link of github code>
+//Note: Origin url is our own account
+//Note: From where we have forked is upstream url
+git remote add upstream <link of github code>
+
+Navigate to the directory 
+create a file and make some changes
+for commiting create a new branch
+git branch aryan
+git checkout aryan
+git add .
+git commit -m "committing to aryan branch"
+git log
+git push origin aryan
+
+git checkout main
+
+//Following are the command lines to sync your fork with the repo from where you forked it
+git fetch --all --prune
+git reset --hard upstream master
+git log
+git push origin main
+------------------------------------------
+git pull upstream main // this will pull any changes performed in the original repo
+=========================================
+merging/squashing all the branches into one single branch
+create multiple branches and do some basic commits
+git rebase -i <link of commit from git log>
+squash others and pick the first
+git reset --hard // this will uncommited files (unconfirmed)
