@@ -1,12 +1,17 @@
 ls 
 mkdir project //This creates a new folder 
+mkdir <NAME OF FOLDER> //Creating a folder
 cd project //For navigating up folder 
 use cd .. for navigating down 
 git init //This will initialize the current folder as a git repository. This history of the current folder can now be maintained. 
 ls  //This is the list command. It displays the list of all the files and folders in the current directory
 ls -a //This command displays all the hidden files. you can also use ls -hidden if error for ambiguity occurs
 ls .git //To view what is inside the .git file: 
-touch names.txt //Command for creation of a new file 
+
+
+New Command: 
+echo "Content inside of the file" > filename.txt // THis is the command for windows
+touch <filename with extension> //Creating a file //This is the command for linux and mac 
 git status //This is the command which tells us about the status of current changes 
 Untracked ka matlab ki agar repo ko share kiya jaye to ye changes samne vale ko nahi dikhenge. 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -17,8 +22,7 @@ git commit -m "This is my first commit" // -m stands for the message
 When you make changes to a file in your working directory, Git does not track those changes until you stage them. You can use the git add command to stage one or more files. Once you have staged the files, you can commit them to the project history using the git commit command.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 //For writing anything into a file
-mkdir <NAME OF FOLDER> //Creating a folder
-touch <filename with extension> //Creating a file
+
 vi <filename with extension> // Entering or opening the file
 Perform the entries
 Press esc
