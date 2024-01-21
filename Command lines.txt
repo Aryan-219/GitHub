@@ -87,16 +87,22 @@ git stash clear
 
 If we want to discard all the changes made after the last commit, then
 git restore .
-================================================
+
+GIT ENDS HERE
+==================================================================================================================================================================================
 #Learning Github
 
-For adding /attaching a github repo 
-git remote add origin <link of github repo>
-git remote -v //This will display which remote url is attached to the current repo
+For adding/attaching a (url)github repo 
+git remote add origin <link of github repo> //yahan par remote ka matlab hota hai ki apan basically urls pe work karne vale hai, add ka matlab ki remote url add karne vale hai.
+Origin is basically a name given to all the repositories of our own personal github account
+git remote -v //This will display which remote url is attached to the current repo 
+git remote rm  origin OR git remote rm  <url> //For removing the origin 
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
 git push origin master //This will push the committed changes to the origin 
 
-//For removing the origin :
-git remote rm  origin OR git remote rm  <url>
+
 
 touch surnames.txt
 touch hotel.txt
