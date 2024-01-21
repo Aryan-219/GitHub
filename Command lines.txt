@@ -92,8 +92,11 @@ git restore .
 
 For adding /attaching a github repo 
 git remote add origin <link of github repo>
-git remote -v
-git push origin master
+git remote -v //This will display which remote url is attached to the current repo
+git push origin master //This will push the committed changes to the origin 
+
+//For removing the origin :
+git remote rm  origin OR git remote rm  <url>
 
 touch surnames.txt
 touch hotel.txt
