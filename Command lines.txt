@@ -72,7 +72,9 @@ Procedure:
 2) git add . //Isse changes staging area me aa jayenge. Matlab ab git in changes ko track kar skta hai
 3) git stash  //Isse last commit k baad kiye gaye sare changes backstage me chale jayenge(stash ho jayenge).  
 
-Ab agar apan chahte hai ki jo changes stash kiye gaye hai unko vapas laya jaye to uske liye: git stash pop (sare changes vapas aa jayenge)
+Ab agar apan chahte hai ki jo changes stash kiye gaye hai unko vapas laya jaye to uske liye: git stash pop (sare changes vapas aa jayenge) 
+ 
+Ab agar apan chahte hai ki vo changes jo stash kiye gaye hai, vo sare clear ho jaye to uske liye: git stash clear
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 cat names.txt
@@ -81,7 +83,7 @@ git add .
 git stash 
 
 For removing all the stashed items
-git stash clears
+git stash clear
 ================================================
 #Learning Github
 
