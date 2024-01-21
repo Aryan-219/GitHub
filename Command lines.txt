@@ -84,6 +84,9 @@ git stash
 
 For removing all the stashed items
 git stash clear
+
+If we want to discard all the changes made after the last commit, then
+git restore .
 ================================================
 #Learning Github
 
