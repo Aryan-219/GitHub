@@ -102,7 +102,7 @@ git remote rm  origin OR git remote rm  <url> //For removing the origin
 
 git push origin master //This will push the committed changes to the origin 
 
-
+Meaning of head: Head is basically a pointer which states that whatever commits will now be made, they will be made to branch that is being currently pointed by the head.
 
 touch surnames.txt
 touch hotel.txt
