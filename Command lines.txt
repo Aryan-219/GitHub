@@ -5,7 +5,8 @@ cd project //For navigating up folder
 use cd .. for navigating down 
 git init //This will initialize the current folder as a git repository. This history of the current folder can now be maintained. 
 ls  //This is the list command. It displays the list of all the files and folders in the current directory
-ls -a //This command displays all the hidden files. you can also use ls -hidden if error for ambiguity occurs
+ls -a //This command displays all the hidden files for git bash
+ls -hidden //This is the command for windows
 ls .git //To view what is inside the .git file: 
 
 
@@ -31,7 +32,8 @@ Type :w // This will save and not exit
 For renaming type :w [name of the file without extension]
 To exit without saving, type :q!
 For viewing whats in the file type cat <filename with extension>
----------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+git restore --staged names.txt
 git status
 git add .
 git status
