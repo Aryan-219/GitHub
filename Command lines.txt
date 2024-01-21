@@ -1,3 +1,4 @@
+clear //This clears the terminal
 ls 
 mkdir project //This creates a new folder 
 mkdir <NAME OF FOLDER> //Creating a folder
@@ -63,15 +64,24 @@ Agrawal //this is the change
 touch surnames.txt
 git add .
 git status
-git stash 
- 
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Agar apan chahte hai ki last commit ke baad jo changes apan ne kiye hai vo sab changes backstage me kahi chale jaye aur current project me display na ho. Aur jab apni marzi kare tab un changes ko vapas le aaye, uske liye stashing use hoti hai
+Procedure:
+1) Perform the changes you want to stash
+2) git add . //Isse changes staging area me aa jayenge. Matlab ab git in changes ko track kar skta hai
+3) git stash  //Isse last commit k baad kiye gaye sare changes backstage me chale jayenge(stash ho jayenge).  
+
+Ab agar apan chahte hai ki jo changes stash kiye gaye hai unko vapas laya jaye to uske liye: git stash pop (sare changes vapas aa jayenge)
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 cat names.txt
 git stash pop
 git add .
 git stash 
 
 For removing all the stashed items
-git stash clear
+git stash clears
 ================================================
 #Learning Github
 
